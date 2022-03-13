@@ -48,7 +48,7 @@ html ::-webkit-scrollbar-thumb:hover {
 
 body {
   font-family: "DM Sans", sans-serif;
-  height: 4560px;
+  height: auto;
 }
 
 a,
@@ -66,7 +66,7 @@ a:visited:hover {
 
 .body {
   padding: 15px 30px;
-  height: 4560px;
+  height: 4570px;
   position: relative;
   overflow: hidden;
 }
@@ -391,6 +391,24 @@ a:visited:hover {
 }
 .z-index-bottom {
   z-index: 1;
+}
+
+.form-body {
+  height: 2180px;
+  position: relative;
+  overflow: hidden;
+}
+.form-body .form {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.form-body .lineas {
+  display: none;
+  opacity: 0.2;
+}
+.form-body .lineas-op {
+  opacity: 0.4;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,29 +9,28 @@
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <nav class="nav">
-      <!-- 
-          <img src="./assets/menu-icon.png" alt="Menú" class="menu" />
-      -->
-      <a href="index.html" class="menu">Volver</a>
-      <img class="logo" src="assets/isologo.png" alt="Líneas! logo" />
-    </nav>
-    <!--
-        <img src="/assets/lineas.svg" alt="Líneas! draw lines" class="svg svg-2" />
+    <div class="form-body">
+      <nav class="nav z-index-top">
+        <div class="link-container">
+          <a href="index.html">Volver</a>
+        </div>
 
-    -->
-    <img
-      src="assets/lineas-half.svg"
-      alt="Líneas! draw lines"
-      class="svg svg-1"
-    />
-    <iframe
-      src="https://docs.google.com/forms/d/e/1FAIpQLScxea_Wi_PqFqsScEWjcocmrzMnBp0a5hg8nO-YiONug1jaFQ/viewform?embedded=true"
-      frameborder="0"
-      marginheight="0"
-      marginwidth="0"
-      class="form"
-      >Cargando formulario...</iframe
-    >
+        <div class="isologo-container">
+          <img src="assets/isologo.png" alt="Líneas! Isologo" class="isologo" />
+        </div>
+      </nav>
+
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScxea_Wi_PqFqsScEWjcocmrzMnBp0a5hg8nO-YiONug1jaFQ/viewform?embedded=true"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        class="form z-index-top"
+        >Cargando formulario...</iframe
+      >
+
+      <div class="lineas lineas-op z-index-bottom"></div>
+      <div class="lineas lineas-complete z-index-bottom"></div>
+    </div>
   </body>
 </html>
