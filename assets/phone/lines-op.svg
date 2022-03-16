@@ -1,17 +1,17 @@
-<svg width="20" height="645" viewBox="0 0 20 645" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5 645V0" stroke="url(#paint0_linear_170_6)" stroke-width="9"/>
-<path d="M10 0V645" stroke="url(#paint1_linear_170_6)" stroke-width="9"/>
-<path d="M15 645V0" stroke="url(#paint2_linear_170_6)" stroke-width="9"/>
+<svg width="16" height="645" viewBox="0 0 16 645" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 645V0" stroke="url(#paint0_linear_170_6)" stroke-width="5"/>
+<path d="M8 0V645" stroke="url(#paint1_linear_170_6)" stroke-width="5"/>
+<path d="M13 645V0" stroke="url(#paint2_linear_170_6)" stroke-width="5"/>
 <defs>
-<linearGradient id="paint0_linear_170_6" x1="5.5" y1="0" x2="5.5" y2="645" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_170_6" x1="3.5" y1="0" x2="3.5" y2="645" gradientUnits="userSpaceOnUse">
 <stop offset="0.919295" stop-color="#FD0E0E"/>
 <stop offset="1" stop-color="#FD0E0E" stop-opacity="0"/>
 </linearGradient>
-<linearGradient id="paint1_linear_170_6" x1="10.5" y1="0" x2="10.5" y2="645" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint1_linear_170_6" x1="8.5" y1="0" x2="8.5" y2="645" gradientUnits="userSpaceOnUse">
 <stop offset="0.924503" stop-color="#FB5A14"/>
 <stop offset="1" stop-color="#FB5A14" stop-opacity="0"/>
 </linearGradient>
-<linearGradient id="paint2_linear_170_6" x1="15.5" y1="0" x2="15.5" y2="645" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint2_linear_170_6" x1="13.5" y1="0" x2="13.5" y2="645" gradientUnits="userSpaceOnUse">
 <stop offset="0.93492" stop-color="#2368D0"/>
 <stop offset="1" stop-color="#2368D0" stop-opacity="0"/>
 </linearGradient>
