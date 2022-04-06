@@ -50,7 +50,11 @@ body {
   font-family: "DM Sans", sans-serif;
   height: auto;
   width: 100%;
-  display: flex;
+}
+@media (max-width: 37.5em) {
+  body {
+    display: flex;
+  }
 }
 
 a,
@@ -68,40 +72,76 @@ a:visited:hover {
 
 .body,
 .form-body {
-  padding: 15px 30px;
-  height: 4570px;
   position: relative;
   overflow: hidden;
   left: 50% !important;
   transform: translateX(-50%) !important;
+  padding: 15px 0;
+  height: 5706px;
+}
+@media (max-width: 37.5em) {
+  .body,
+.form-body {
+    padding: 15px 30px;
+    height: 4570px;
+  }
 }
 
-.lineas {
-  top: 0;
-  left: 6px;
-  width: 100%;
-  position: absolute;
+@media (max-width: 37.5em) {
+  .lineas {
+    top: 0;
+    left: 6px;
+    width: 100%;
+    position: absolute;
+  }
+  .lineas-op {
+    background: url(../assets/phone/lines-op.svg);
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 10px;
+    z-index: 1;
+  }
+  .lineas-complete {
+    background: url(../assets/phone/lines-complete.svg);
+    background-repeat: no-repeat;
+    z-index: 0;
+    height: 4542.16px;
+  }
 }
-.lineas-op {
-  background: url(../assets/phone/lines-op.svg);
-  background-repeat: no-repeat;
-  height: 100%;
-  left: 10px;
-  z-index: 1;
+@media (min-width: 1200px) {
+  .lineas {
+    top: 0;
+    left: 44px;
+    width: 100%;
+    position: absolute;
+  }
+  .lineas-op {
+    background: url(../assets/desktop/lines-op.svg);
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 48px;
+    z-index: 1;
+  }
+  .lineas-complete {
+    background: url(../assets/desktop/lines-complete.svg);
+    background-repeat: no-repeat;
+    z-index: 0;
+    height: 5630px;
+  }
 }
-.lineas-complete {
-  background: url(../assets/phone/lines-complete.svg);
-  background-repeat: no-repeat;
-  z-index: 0;
-  height: 4542.16px;
-}
-
 .draw-esqueleton {
   position: absolute;
-  right: 5px;
   top: 60px;
-  width: 340px;
-  height: 571px;
+  right: 45px;
+  width: 740px;
+  height: 1205px;
+}
+@media (max-width: 37.5em) {
+  .draw-esqueleton {
+    right: 5px;
+    width: 340px;
+    height: 571px;
+  }
 }
 
 .nav {
@@ -111,6 +151,11 @@ a:visited:hover {
   position: relative;
   top: 10px;
 }
+@media (min-width: 1200px) {
+  .nav {
+    left: 109px;
+  }
+}
 .nav a {
   border: 1px solid transparent;
 }
@@ -118,131 +163,269 @@ a:visited:hover {
   margin-right: 8px;
 }
 .nav .link-container a {
-  font-size: 14px;
-  margin: 0 6px;
+  font-size: 36px;
+  margin-right: 46px;
   line-height: 110.5%;
+}
+@media (max-width: 37.5em) {
+  .nav .link-container a {
+    font-size: 14px;
+  }
 }
 .nav .isologo-container {
   position: relative;
 }
 .nav .isologo-container .isologo {
   position: relative;
-  background-image: url(../assets/phone/isologo-navbar.png);
+  background-image: url(../assets/isologo.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 87px;
-  height: 42px;
-  right: 12px;
+  height: 85px;
+  width: 256px;
+  right: 112px;
+}
+@media (max-width: 37.5em) {
+  .nav .isologo-container .isologo {
+    width: 87px;
+    height: 42px;
+  }
 }
 
-.title-box {
-  position: absolute;
-  width: 338px;
-  height: 162px;
-  left: 40px;
-  top: 204px;
+@media (max-width: 37.5em) {
+  .title-box {
+    position: absolute;
+    width: 338px;
+    height: 162px;
+    left: 40px;
+    top: 204px;
+  }
+  .title-box h2 {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    margin-bottom: 25px;
+  }
+  .title-box .title {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -0.035em;
+  }
+  .title-box .title-red {
+    color: #fd0e0e;
+  }
+  .title-box .title-orange {
+    color: #fff;
+  }
+  .title-box .title-orange-box {
+    background-color: #fb5a14;
+    width: 224px;
+  }
+  .title-box h3 {
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 139.2%;
+    letter-spacing: 0.459em;
+    color: #2368d0;
+  }
 }
-.title-box h2 {
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 23px;
-  margin-bottom: 25px;
+@media (min-width: 1200px) {
+  .title-box {
+    position: absolute;
+    width: 1039px;
+    height: 335.21px;
+    left: 109px;
+    top: 187.79px;
+  }
+  .title-box h2 {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 45px;
+    margin-bottom: 25px;
+  }
+  .title-box .title {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 91px;
+    letter-spacing: -0.035em;
+  }
+  .title-box .title-red {
+    color: #fd0e0e;
+  }
+  .title-box .title-orange {
+    color: #fff;
+  }
+  .title-box .title-orange-box {
+    background-color: #fb5a14;
+    width: 514px;
+  }
+  .title-box h3 {
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 139.2%;
+    /* or 89px */
+    letter-spacing: 0.33em;
+    color: #2368d0;
+  }
 }
-.title-box .title {
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 36px;
-  line-height: 45px;
-  letter-spacing: -0.035em;
+@media (max-width: 37.5em) {
+  .portada .slogan {
+    position: absolute;
+    width: 363px;
+    height: 42px;
+    left: 40px;
+    top: 613px;
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    letter-spacing: 0.01em;
+  }
+  .portada .place {
+    position: absolute;
+    height: 16px;
+    left: 40px;
+    top: 684px;
+  }
 }
-.title-box .title-red {
-  color: #fd0e0e;
+@media (min-width: 1200px) {
+  .portada .slogan {
+    position: absolute;
+    width: 743px;
+    height: 47px;
+    left: 109px;
+    top: 577px;
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 47px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+  }
+  .portada .place {
+    position: absolute;
+    font-size: 22px;
+    height: 10px;
+    left: 109px;
+    top: 684px;
+  }
 }
-.title-box .title-orange {
-  color: #fff;
+@media (max-width: 37.5em) {
+  .section-title {
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 106.5%;
+  }
+  .section-title .detail {
+    position: relative;
+    display: inline-block;
+    top: -10px;
+    left: -10px;
+  }
 }
-.title-box .title-orange-box {
-  background-color: #fb5a14;
-  width: 224px;
-}
-.title-box h3 {
-  font-family: "EB Garamond";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 139.2%;
-  letter-spacing: 0.459em;
-  color: #2368d0;
+@media (min-width: 1200px) {
+  .section-title {
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 106.5%;
+  }
+  .section-title .detail {
+    position: relative;
+    display: inline-block;
+    top: -10px;
+    left: -10px;
+  }
 }
 
-.portada .slogan {
-  position: absolute;
-  width: 363px;
-  height: 42px;
-  left: 40px;
-  top: 613px;
-  font-family: "EB Garamond";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 23px;
-  letter-spacing: 0.01em;
+@media (min-width: 1200px) {
+  .section-subtitle {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+  }
 }
-.portada .place {
-  position: absolute;
-  height: 16px;
-  left: 40px;
-  top: 684px;
-}
-
-.section-title {
-  font-family: "EB Garamond";
-  font-style: normal;
-  font-weight: 800;
-  font-size: 36px;
-  line-height: 106.5%;
-}
-.section-title .detail {
-  position: relative;
-  display: inline-block;
-  top: -10px;
-  left: -10px;
+@media (max-width: 37.5em) {
+  .section-subtitle {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+  }
 }
 
-.section-subtitle {
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 110%;
-  letter-spacing: -0.045em;
+@media (max-width: 37.5em) {
+  .section-cw {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+    margin-top: 3px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-cw {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+    margin-top: 13px;
+  }
 }
 
-.section-cw {
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 110%;
-  letter-spacing: -0.045em;
-  margin-top: 3px;
+@media (max-width: 37.5em) {
+  .section-ul {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+    width: 318px;
+  }
+  .section-ul--li, .section-ul--p {
+    margin: 3px 0 0 28px;
+  }
 }
-
-.section-ul {
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 110%;
-  letter-spacing: -0.045em;
-  width: 318px;
-}
-.section-ul--li, .section-ul--p {
-  margin: 3px 0 0 28px;
+@media (min-width: 1200px) {
+  .section-ul {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 110%;
+    letter-spacing: -0.045em;
+  }
+  .section-ul--li {
+    margin: 3px 0 0 28px;
+  }
 }
 
 .section-detail {
@@ -263,142 +446,324 @@ a:visited:hover {
   font-size: 13px;
 }
 
-.intro {
-  position: absolute;
-  width: 319px;
-  height: 892.38px;
-  top: 767px;
+@media (max-width: 37.5em) {
+  .intro {
+    position: absolute;
+    width: 319px;
+    height: 892.38px;
+    top: 767px;
+  }
+}
+@media (min-width: 1200px) {
+  .intro {
+    position: absolute;
+    width: 1247px;
+    height: 1187px;
+    left: 61px;
+    top: 789px;
+  }
 }
 
-.modalidad {
-  position: absolute;
-  width: 319px;
-  height: 488px;
-  left: 19px;
-  top: 1539.67px;
+@media (max-width: 37.5em) {
+  .modalidad {
+    position: absolute;
+    width: 319px;
+    height: 488px;
+    left: 19px;
+    top: 1539.67px;
+  }
+}
+@media (min-width: 1200px) {
+  .modalidad {
+    position: absolute;
+    width: 1235px;
+    height: 395.23px;
+    left: 61px;
+    top: 1609px;
+  }
 }
 
-.requisitos {
-  position: absolute;
-  width: 314px;
-  height: 186px;
-  left: 16px;
-  top: 2284px;
+@media (max-width: 37.5em) {
+  .requisitos {
+    position: absolute;
+    width: 314px;
+    height: 186px;
+    left: 16px;
+    top: 2284px;
+  }
+}
+@media (min-width: 1200px) {
+  .requisitos {
+    position: absolute;
+    width: 1233px;
+    height: 264.18px;
+    left: 76px;
+    top: 2492px;
+  }
 }
 
-.programa {
-  position: absolute;
-  width: 334px;
-  height: 980px;
-  left: 16px;
-  top: 2523px;
+@media (min-width: 1200px) {
+  .programa {
+    position: absolute;
+    width: 1246px;
+    height: 1169px;
+    left: 76px;
+    top: 2810px;
+  }
+  .programa .column {
+    column-count: 2;
+  }
+  .programa-detail {
+    position: absolute;
+    width: 180px;
+    height: 16px;
+    right: -10px;
+    top: 930px;
+  }
 }
-.programa-detail {
-  position: absolute;
-  width: 180px;
-  height: 16px;
-  right: -10px;
-  top: 930px;
-}
-
-.inscripcion {
-  position: absolute;
-  width: 319px;
-  height: 656.32px;
-  left: 19px;
-  top: 3508.23px;
-}
-.inscripcion .section-title {
-  font-family: "EB Garamond";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 128.7%;
-  letter-spacing: -0.02em;
-}
-.inscripcion .goto-inscription {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 30px 0 15px 0;
-}
-.inscripcion .goto-inscription a {
-  border: none;
-}
-.inscripcion .btn {
-  border: none;
-  width: 222.3px;
-  height: 47.71px;
-  background: url(../assets/phone/btn-gradient-background.png);
-  font-family: "Outfit";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 14px;
-  line-height: 128.7%;
-  text-align: center;
-  letter-spacing: -0.02em;
-  text-decoration-line: underline;
-  color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 4px 23px 5px #ff6838;
-  margin-bottom: 20px;
+@media (max-width: 37.5em) {
+  .programa {
+    position: absolute;
+    width: 334px;
+    height: 980px;
+    left: 16px;
+    top: 2523px;
+  }
+  .programa-detail {
+    position: absolute;
+    width: 180px;
+    height: 16px;
+    right: -10px;
+    top: 930px;
+  }
 }
 
-.quienes-somos {
-  position: absolute;
-  width: 368px;
-  height: 439.46px;
-  left: 16px;
-  top: 4152px;
+@media (max-width: 37.5em) {
+  .inscripcion {
+    position: absolute;
+    width: 319px;
+    height: 656.32px;
+    left: 19px;
+    top: 3508.23px;
+  }
+  .inscripcion .section-title {
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128.7%;
+    letter-spacing: -0.02em;
+  }
+  .inscripcion .goto-inscription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 15px 0;
+  }
+  .inscripcion .goto-inscription a {
+    border: none;
+  }
+  .inscripcion .btn {
+    border: none;
+    width: 222.3px;
+    height: 47.71px;
+    background: url(../assets/phone/btn-gradient-background.png);
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 128.7%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 4px 23px 5px #ff6838;
+    margin-bottom: 20px;
+  }
 }
-.quienes-somos .section-div {
-  position: relative;
-  margin-top: 40px;
-  width: 292.96px;
-}
-.quienes-somos .section-div .lineas-logo {
-  display: inline-block;
-  position: absolute;
-  width: 113.87px;
-  height: 96.18px;
-  left: 55px;
-  top: -40px;
-  background-image: url(../assets/phone/logo-black.png);
-}
-.quienes-somos .final-text {
-  position: absolute;
-  width: 271px;
-  height: 38.38px;
-  right: 0;
-  top: 230px;
-  font-family: "EB Garamond";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 128.7%;
-  letter-spacing: -0.02em;
+@media (min-width: 1200px) {
+  .inscripcion {
+    position: absolute;
+    width: 1213px;
+    height: 1514px;
+    left: 76px;
+    top: 3899px;
+  }
+  .inscripcion .section-title {
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 128.7%;
+    /* or 93px */
+    letter-spacing: -0.02em;
+  }
+  .inscripcion .goto-inscription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 110px 0 65px 0;
+  }
+  .inscripcion .goto-inscription a {
+    border: none;
+  }
+  .inscripcion .btn {
+    border: none;
+    cursor: pointer;
+    width: 386px;
+    height: 82.87px;
+    background: url(../assets/desktop/btn-gradient-background.png);
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 128.7%;
+    /* or 31px */
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 23px 5px #ff6838;
+    margin-bottom: 20px;
+  }
 }
 
-.final {
-  position: absolute;
-  height: 63px;
-  right: 20px;
-  top: 4496px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+@media (min-width: 1200px) {
+  .quienes-somos {
+    position: absolute;
+    width: 1237px;
+    height: 810px;
+    left: 85px;
+    top: 4962px;
+  }
+  .quienes-somos .section-div {
+    position: relative;
+    margin-top: 40px;
+  }
+  .quienes-somos .section-div .lineas-logo {
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    height: 96.18px;
+    left: 115px;
+    top: -40px;
+    background-image: url(../assets/logo-black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .quienes-somos .final-text {
+    position: absolute;
+    width: 631.08px;
+    height: 56px;
+    left: 644.14px;
+    top: 362px;
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 128.7%;
+    /* or 62px */
+    letter-spacing: -0.02em;
+  }
 }
-.final .iso {
-  background: url(../assets/phone/iso-foot-gray.png);
-  width: 25px;
-  height: 25px;
-  opacity: 0.7;
-  margin: -5px 0 5px 0;
+@media (max-width: 37.5em) {
+  .quienes-somos {
+    position: absolute;
+    width: 368px;
+    height: 439.46px;
+    left: 16px;
+    top: 4152px;
+  }
+  .quienes-somos .section-div {
+    position: relative;
+    margin-top: 40px;
+    width: 292.96px;
+  }
+  .quienes-somos .section-div .lineas-logo {
+    display: inline-block;
+    position: absolute;
+    width: 150px;
+    height: 96.18px;
+    left: 55px;
+    top: -40px;
+    background-image: url(../assets/logo-black.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .quienes-somos .final-text {
+    position: absolute;
+    width: 271px;
+    height: 38.38px;
+    right: 0;
+    top: 230px;
+    font-family: "EB Garamond";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 128.7%;
+    letter-spacing: -0.02em;
+  }
 }
-.final .place {
-  font-size: 10px;
-  line-height: 13px;
-  letter-spacing: 0.37em;
+
+@media (max-width: 37.5em) {
+  .final {
+    position: absolute;
+    height: 63px;
+    right: 20px;
+    top: 4496px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .final .iso {
+    background: url(../assets/iso-foot-gray.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 30px;
+    opacity: 0.7;
+    margin: -5px 0 5px 0;
+  }
+  .final .place {
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.37em;
+  }
+}
+@media (min-width: 1200px) {
+  .final {
+    position: absolute;
+    width: 100vw;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .final .iso {
+    background: url(../assets/iso-foot-gray.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 107px;
+    height: 125px;
+    opacity: 0.7;
+    margin: -5px 0 5px 0;
+    margin-right: 20px;
+  }
+  .final .place {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 31px;
+    letter-spacing: 0.37em;
+    margin-right: 20px;
+  }
 }
 
 .z-index-top {
@@ -414,7 +779,11 @@ a:visited:hover {
 .margin-left-fix {
   left: 50% !important;
   transform: translateX(-50%) !important;
-  width: 314px;
+}
+@media (max-width: 37.5em) {
+  .margin-left-fix {
+    width: 314px;
+  }
 }
 
 .form-body {
