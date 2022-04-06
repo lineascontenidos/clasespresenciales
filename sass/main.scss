@@ -52,14 +52,14 @@ $breakpoint argument choices:
     }
   }
 
-  @if $breakpoint == tab-land {
-    @media (max-width: 1199px) {
+  @if $breakpoint == tab {
+    @media (min-width: 600px) {
       @content;
     }
   }
 
   @if $breakpoint == desktop {
-    @media (min-width: 1200px) {
+    @media (min-width: 1240px) {
       @content;
     }
   }
@@ -113,6 +113,10 @@ body {
   @include respond(phone) {
     display: flex;
   }
+
+  @include respond(tab) {
+    display: flex;
+  }
 }
 
 a,
@@ -131,15 +135,31 @@ a:visited {
 .body,
 .form-body {
   @include respond(phone) {
+    position: relative;
     padding: 15px 30px;
     height: 4570px;
+    overflow: hidden;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
   }
-  position: relative;
-  overflow: hidden;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  padding: 15px 0;
-  height: 5706px;
+
+  @include respond(desktop) {
+    position: relative;
+    overflow: hidden;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    padding: 15px 0;
+    height: 5706px;
+  }
+
+  @include respond(tab) {
+    position: relative;
+    overflow: hidden;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    padding: 15px 0;
+    height: 4706px;
+  }
 }
 
 // Líneas laterales phone
@@ -162,6 +182,30 @@ a:visited {
       background-repeat: no-repeat;
       z-index: 0;
       height: 4542.16px;
+    }
+  }
+}
+
+// Líneas laterales tablet
+@include respond(tab) {
+  .lineas {
+    top: 0;
+    left: 44px;
+    width: 100%;
+    position: absolute;
+
+    &-op {
+      background: url(../assets/tablet/lines-op.svg);
+      background-repeat: no-repeat;
+      height: 100%;
+      left: 48px;
+      z-index: 1;
+    }
+    &-complete {
+      background: url(../assets/tablet/lines-complete.svg);
+      background-repeat: no-repeat;
+      z-index: 0;
+      height: 5630px;
     }
   }
 }
@@ -218,6 +262,10 @@ a:visited {
     left: 109px;
   }
 
+  @include respond(tab) {
+    left: 117px;
+  }
+
   a {
     border: 1px solid transparent;
   }
@@ -245,6 +293,16 @@ a:visited {
         line-height: 110.5%;
       }
     }
+
+    @include respond(tab) {
+      margin-right: 46px;
+
+      a {
+        font-size: 24px;
+        margin-right: 26px;
+        line-height: 110.5%;
+      }
+    }
   }
 
   .isologo-container {
@@ -263,10 +321,17 @@ a:visited {
         right: 0;
       }
 
-      height: 85px;
-      width: 256px;
+      @include respond(desktop) {
+        height: 85px;
+        width: 256px;
+        right: 112px;
+      }
 
-      right: 112px;
+      @include respond(tab) {
+        height: 85px;
+        width: 186px;
+        right: 132px;
+      }
     }
   }
 }
@@ -545,7 +610,7 @@ a:visited {
   font-family: 'DM Sans';
   font-style: italic;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 26px;
   line-height: 110.5%;
   letter-spacing: -0.05em;
 }
@@ -626,7 +691,7 @@ a:visited {
 
     &-detail {
       position: absolute;
-      width: 180px;
+      width: 330px;
       height: 16px;
       right: -10px;
       top: 930px;
@@ -921,6 +986,10 @@ a:visited {
   @include respond(phone) {
     width: 314px;
   }
+}
+
+.red {
+  color: $primary-red;
 }
 // FORMULARIO
 
