@@ -222,16 +222,28 @@ a:visited {
     border: 1px solid transparent;
   }
 
-  .link-container {
-    margin-right: 8px;
+  @include respond(phone) {
+  }
 
-    a {
-      @include respond(phone) {
+  .link-container {
+    @include respond(phone) {
+      margin-right: 6px;
+
+      a {
         font-size: 14px;
+        margin-right: 6px;
+        line-height: 110.5%;
       }
-      font-size: 36px;
+    }
+
+    @include respond(desktop) {
       margin-right: 46px;
-      line-height: 110.5%;
+
+      a {
+        font-size: 36px;
+        margin-right: 46px;
+        line-height: 110.5%;
+      }
     }
   }
 
@@ -248,6 +260,7 @@ a:visited {
       @include respond(phone) {
         width: 87px;
         height: 42px;
+        right: 0;
       }
 
       height: 85px;

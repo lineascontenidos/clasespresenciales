@@ -159,17 +159,24 @@ a:visited:hover {
 .nav a {
   border: 1px solid transparent;
 }
-.nav .link-container {
-  margin-right: 8px;
-}
-.nav .link-container a {
-  font-size: 36px;
-  margin-right: 46px;
-  line-height: 110.5%;
-}
 @media (max-width: 37.5em) {
+  .nav .link-container {
+    margin-right: 6px;
+  }
   .nav .link-container a {
     font-size: 14px;
+    margin-right: 6px;
+    line-height: 110.5%;
+  }
+}
+@media (min-width: 1200px) {
+  .nav .link-container {
+    margin-right: 46px;
+  }
+  .nav .link-container a {
+    font-size: 36px;
+    margin-right: 46px;
+    line-height: 110.5%;
   }
 }
 .nav .isologo-container {
@@ -189,6 +196,7 @@ a:visited:hover {
   .nav .isologo-container .isologo {
     width: 87px;
     height: 42px;
+    right: 0;
   }
 }
 
