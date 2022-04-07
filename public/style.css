@@ -61,6 +61,11 @@ body {
     display: flex;
   }
 }
+@media (min-width: 1240px) {
+  body {
+    display: inherit;
+  }
+}
 
 a,
 a:visited {
@@ -513,6 +518,11 @@ a:visited:hover {
   line-height: 110.5%;
   letter-spacing: -0.05em;
 }
+@media (max-width: 37.5em) {
+  .section-detail {
+    font-size: 16px;
+  }
+}
 
 .place-format {
   font-size: 15px;
@@ -608,7 +618,7 @@ a:visited:hover {
   }
   .programa-detail {
     position: absolute;
-    width: 180px;
+    width: 190px;
     height: 16px;
     right: -10px;
     top: 930px;
