@@ -173,6 +173,7 @@ a:visited {
     left: 6px;
     width: 100%;
     position: absolute;
+    opacity: 0.6;
 
     &-op {
       background: url(../assets/phone/lines-op.svg);
@@ -221,6 +222,7 @@ a:visited {
     left: 44px;
     width: 100%;
     position: absolute;
+    opacity: 0.6;
 
     &-op {
       background: url(../assets/desktop/lines-op.svg);
@@ -691,7 +693,7 @@ a:visited {
     width: 1246px;
     height: 1169px;
     left: 76px;
-    top: 2810px;
+    top: 2860px;
 
     .column {
       column-count: 2;
@@ -710,7 +712,7 @@ a:visited {
     width: 334px;
     height: 980px;
     left: 16px;
-    top: 2523px;
+    top: 2543px;
 
     &-detail {
       position: absolute;
@@ -998,6 +1000,14 @@ a:visited {
 
 .red {
   color: $primary-red;
+}
+
+.blue {
+  color: $primary-blue;
+}
+
+.orange {
+  color: $primary-orange;
 }
 // FORMULARIO
 

@@ -103,6 +103,7 @@ a:visited:hover {
     left: 6px;
     width: 100%;
     position: absolute;
+    opacity: 0.6;
   }
   .lineas-op {
     background: url(../assets/phone/lines-op.svg);
@@ -124,6 +125,7 @@ a:visited:hover {
     left: 44px;
     width: 100%;
     position: absolute;
+    opacity: 0.6;
   }
   .lineas-op {
     background: url(../assets/desktop/lines-op.svg);
@@ -534,7 +536,7 @@ a:visited:hover {
     width: 1246px;
     height: 1169px;
     left: 76px;
-    top: 2810px;
+    top: 2860px;
   }
   .programa .column {
     column-count: 2;
@@ -553,7 +555,7 @@ a:visited:hover {
     width: 334px;
     height: 980px;
     left: 16px;
-    top: 2523px;
+    top: 2543px;
   }
   .programa-detail {
     position: absolute;
@@ -814,6 +816,14 @@ a:visited:hover {
 
 .red {
   color: #fd0e0e;
+}
+
+.blue {
+  color: #2368d0;
+}
+
+.orange {
+  color: #fb5a14;
 }
 
 .form-body {
