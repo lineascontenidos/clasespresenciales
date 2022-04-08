@@ -51,12 +51,7 @@ body {
   height: auto;
   width: 100%;
 }
-@media (max-width: 37.5em) {
-  body {
-    display: flex;
-  }
-}
-@media (min-width: 600px) {
+@media (max-width: 650px) {
   body {
     display: flex;
   }
@@ -80,7 +75,7 @@ a:visited:hover {
   border-bottom: 1px solid #2368d0;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .body,
 .form-body {
     position: relative;
@@ -102,19 +97,7 @@ a:visited:hover {
     height: 5706px;
   }
 }
-@media (min-width: 600px) {
-  .body,
-.form-body {
-    position: relative;
-    overflow: hidden;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    padding: 15px 0;
-    height: 4706px;
-  }
-}
-
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .lineas {
     top: 0;
     left: 6px;
@@ -133,27 +116,6 @@ a:visited:hover {
     background-repeat: no-repeat;
     z-index: 0;
     height: 4542.16px;
-  }
-}
-@media (min-width: 600px) {
-  .lineas {
-    top: 0;
-    left: 44px;
-    width: 100%;
-    position: absolute;
-  }
-  .lineas-op {
-    background: url(../assets/tablet/lines-op.svg);
-    background-repeat: no-repeat;
-    height: 100%;
-    left: 48px;
-    z-index: 1;
-  }
-  .lineas-complete {
-    background: url(../assets/tablet/lines-complete.svg);
-    background-repeat: no-repeat;
-    z-index: 0;
-    height: 5630px;
   }
 }
 @media (min-width: 1240px) {
@@ -184,7 +146,7 @@ a:visited:hover {
   width: 740px;
   height: 1205px;
 }
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .draw-esqueleton {
     right: 5px;
     width: 340px;
@@ -204,15 +166,10 @@ a:visited:hover {
     left: 109px;
   }
 }
-@media (min-width: 600px) {
-  .nav {
-    left: 117px;
-  }
-}
 .nav a {
   border: 1px solid transparent;
 }
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .nav .link-container {
     margin-right: 6px;
   }
@@ -232,16 +189,6 @@ a:visited:hover {
     line-height: 110.5%;
   }
 }
-@media (min-width: 600px) {
-  .nav .link-container {
-    margin-right: 46px;
-  }
-  .nav .link-container a {
-    font-size: 24px;
-    margin-right: 26px;
-    line-height: 110.5%;
-  }
-}
 .nav .isologo-container {
   position: relative;
 }
@@ -252,7 +199,7 @@ a:visited:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .nav .isologo-container .isologo {
     width: 87px;
     height: 42px;
@@ -266,15 +213,7 @@ a:visited:hover {
     right: 112px;
   }
 }
-@media (min-width: 600px) {
-  .nav .isologo-container .isologo {
-    height: 85px;
-    width: 186px;
-    right: 132px;
-  }
-}
-
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .title-box {
     position: absolute;
     width: 338px;
@@ -363,7 +302,7 @@ a:visited:hover {
     color: #2368d0;
   }
 }
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .portada .slogan {
     position: absolute;
     width: 363px;
@@ -407,7 +346,7 @@ a:visited:hover {
     top: 684px;
   }
 }
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .section-title {
     font-family: "EB Garamond";
     font-style: normal;
@@ -448,7 +387,7 @@ a:visited:hover {
     letter-spacing: -0.045em;
   }
 }
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .section-subtitle {
     font-family: "DM Sans";
     font-style: normal;
@@ -459,7 +398,7 @@ a:visited:hover {
   }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .section-cw {
     font-family: "DM Sans";
     font-style: normal;
@@ -482,7 +421,7 @@ a:visited:hover {
   }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .section-ul {
     font-family: "DM Sans";
     font-style: normal;
@@ -518,7 +457,7 @@ a:visited:hover {
   line-height: 110.5%;
   letter-spacing: -0.05em;
 }
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .section-detail {
     font-size: 16px;
   }
@@ -533,7 +472,7 @@ a:visited:hover {
   font-size: 13px;
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .intro {
     position: absolute;
     width: 319px;
@@ -551,7 +490,7 @@ a:visited:hover {
   }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .modalidad {
     position: absolute;
     width: 319px;
@@ -570,7 +509,7 @@ a:visited:hover {
   }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .requisitos {
     position: absolute;
     width: 314px;
@@ -608,7 +547,7 @@ a:visited:hover {
     top: 930px;
   }
 }
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .programa {
     position: absolute;
     width: 334px;
@@ -625,7 +564,7 @@ a:visited:hover {
   }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .inscripcion {
     position: absolute;
     width: 319px;
@@ -756,13 +695,13 @@ a:visited:hover {
     letter-spacing: -0.02em;
   }
 }
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .quienes-somos {
     position: absolute;
     width: 368px;
     height: 439.46px;
     left: 16px;
-    top: 4152px;
+    top: 4200px;
   }
   .quienes-somos .section-div {
     position: relative;
@@ -796,7 +735,7 @@ a:visited:hover {
   }
 }
 
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .final {
     position: absolute;
     height: 63px;
@@ -867,7 +806,7 @@ a:visited:hover {
   left: 50% !important;
   transform: translateX(-50%) !important;
 }
-@media (max-width: 37.5em) {
+@media (max-width: 650px) {
   .margin-left-fix {
     width: 314px;
   }
